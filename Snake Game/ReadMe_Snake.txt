@@ -1,0 +1,2 @@
+The following python code is one of the first beginner projects, the snake game, I completed along a guide with a few added modifications
+Guide used: https://www.edureka.co/blog/snake-game-with-pygame/
