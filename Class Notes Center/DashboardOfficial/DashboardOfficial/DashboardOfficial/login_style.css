@@ -1,0 +1,157 @@
+/* style.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('OleMissNews.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login-container {
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(2em);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    /*background: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.bottombar{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+/*background: red;*/
+display: flex;
+
+
+}
+
+.logo{
+    font-size: 2em;
+
+    color:white;
+    user-select: none;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding does not affect width */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+input[type="submit"] {
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: powderblue;
+}
+
+
+.login-container h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label{
+    top: -5px;
+
+}
+
+.home-button {
+    display: block; /* Ensure it's a block-level element */
+    width: 100%; /* Make the button full-width */
+    padding: 10px; /* Padding for better touch area and aesthetics */
+    margin-bottom: 20px; /* Space before the form starts */
+    background-color: navy; /* A deep blue background */
+    color: white; /* White text */
+    border: none; /* No borders */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Center text inside the button */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.home-button:hover {
+    background-color: navy; /* Darker shade of blue for hover effect */
+}
+/* Style for both Register and Forgot Password buttons */
+.register-button{
+    display: block; /* Makes the button a block element */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for aesthetics */
+    margin-top: 10px; /* Space between buttons */
+    background-color: navy; /* Blue, slightly lighter than login button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes on hover */
+    font-size: 16px; /* Font size */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; /* Center the text */
+    font-size: medium;
+}
+
+.register-button:hover {
+    background-color: #003580; /* Darker blue on hover */
+}

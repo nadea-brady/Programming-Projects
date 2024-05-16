@@ -1,0 +1,79 @@
+/* faq_style.css */
+body {
+    font-family: Arial, sans-serif;
+    /*line-height: 1.6;*/
+    padding: 20px;
+    background: url('Lyceum.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    background: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.faq-question:hover{
+    background: white;
+    color: black;
+}
+
+
+.faq-answer {
+    padding: 20px;
+    display: none; /* Hide answers by default */
+    background: #f9f9f9;
+    color: #007bff; /* Hyperlink color */
+    text-decoration: none; /* Remove underline */
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Makes it easier to center */
+    width: 200px; /* Fixed width */
+    margin-left: auto; /* Centering horizontally */
+    margin-right: auto; /* Centering horizontally */
+}
+
+.back-button:hover {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+

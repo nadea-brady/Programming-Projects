@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('OleMissNews.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login-container {
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(2em);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    /*background: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.bottombar{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+/*background: red;*/
+display: flex;
+
+
+}
+
+.logo{
+    font-size: 2em;
+
+    color:white;
+    user-select: none;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding does not affect width */
+}
+
+input[type="submit"] {
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: powderblue;
+}
+
+
+.login-container h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.form-group .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label{
+    top: -5px;
+
+}
+

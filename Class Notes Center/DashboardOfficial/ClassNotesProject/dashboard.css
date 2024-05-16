@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: navy;
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all o.5s ease-in-out;
+}
+
+.menu .top .li{
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    
+
+}
+
+.menu li:hover, 
+.active{
+    background: grey;
+
+}
+.menu a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.main--content{
+    position: relative;
+    background: #E7EAE5;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img{
+
+width: 50px;
+height: 50px;
+cursor: pointer;
+border-radius: 50%;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title{
+    color: rgba(113, 99, 106, 255);
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search--box{
+
+    background: #E7EAE5;
+    border-radius: 15px;
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i{
+
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box:hover{
+    transform: scale(1.2);
+}
+
+.card--container{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+
+
+.card--wrapper{
+    display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
+}
+
+.main--title{
+    color: red;
+    padding-bottom: 10px;
+    font-size: 15px;
+
+}
+
+.student--card{
+    background: #E7EAE5;
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    word-wrap: break-word;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.student--card:hover{
+    transform: translate(-5px);
+}
+
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.amount{
+    display: flex;
+
+    flex-direction: column;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+}
+.amount--value{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+
+}
+
+.icon{
+    color: white;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: powderblue;
+}
+
+.card--detail{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap:normal;
+    overflow: hidden;
+    max-height: 80px;
+}
+
+
+
+.red{
+    background: lightcoral;
+}
+
+.powder-blue{
+    background: powderblue;
+}
+
+.green{
+    background: lightseagreen;
+}
+
+.lime{
+    background: lime;
+}
+
+.ash{
+    background: rgb(178, 190, 181);
+}
+
+.orange{
+    background: orange;
+}
+
+
+.add--Button{
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Top and bottom padding 10px, left and right padding 20px */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+button {
+    background-color: #4CAF50; /* Green background*/
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #45a049; 
+}

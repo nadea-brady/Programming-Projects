@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#course-form {
+    margin-bottom: 20px;
+}
+
+#course-name {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#course-list li {
+    margin-bottom: 10px;
+}
